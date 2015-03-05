@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- source: http://jsbin.com/antoniosfabuloushomepage/13 -->
+<html>
+<head>
+  <style>
+#parent {
+    overflow: hidden;
+   
+}
+ # {
+    float: right;
+      /* width: 300px;
+      height: 400px; */
+  
+}   
+    
+.fb-comments {
+    float: right;
+      /* width: 300px;
+      height: 400px; */
+  
+}
+    
+    #webpagediv {
+    float: left;
+       width: 600px;
+      height: 400px; 
+  
+}
+.left {
+  
+    overflow: hidden;
+    height: 100px;
+  
+}
+    
+    #foo2 {
+    display: block;
+    font-size: 16px;
+       margin: 7px 0;
+      padding: 5px 0; 
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+  <script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script>
+  
+        <script type="text/javascript">
+    $(function(){
+      // create our popcorn instance
+var pop = Popcorn.vimeo( "#vimeo", "http://vimeo.com/43397148" );
+  
+      /*  pop.footnote({
+        start: 1,
+        end: 15,
+        text: "Vimeo working!",
+        target: "foo"
+    }); */
+      
+      /*     pop.footnote({
+        start: 2,
+        end: 5,
+        text: "Waht do you think about this?!",
+        target: "foo2"
+    });  
+      
+           pop.footnote({
+        start: 7,
+        end: 13,
+        text: "and this?!",
+        target: "foo2"
+    });  */
+      
+     
+      
+          pop.footnote({
+        start:10,
+        end: 18,
+        text: "My name is Simon Rogers I edit the Guardian Data Blog  and Data Store and I work with Data, and try to get stories out of  numbers.",
+        target: "foo2"
+    });
+
+      
+        pop.footnote({
+        start: 22,
+        end: 55,
+        text: "So, what is open data? I supposed that we are living  in a time that we have been surrounded by data, there is much of the  stuff out there, and most of the data is coming from Governments,  because Governments can see it as a really good way, a simple way, to  look open and transparent and everyone wants them to be transparent, so  governments around the world are opening up their Data Vaults, and  allowing anybody access to it, and that is a big deal because what it  means is that we have access to data we would have never  done in the  past. and that gives us stories and new ways of looking at the world.",
+        target: "foo2"
+    });
+      
+    
+       pop.footnote({
+        start: 55,
+        end: 68,
+        text: "and then Suddenly with Wikileaks ou had a big story  that you could only get out of data, and data analysis, and I think that  have changed the way data journalism was perceived, certenty inside  this organisation.",
+        target: "foo2"
+    });
+      
+      
+          pop.footnote({
+        start: 72,
+        end:  102,
+        text: "How do we started doing this? well I guess. I had a  lot of Data that I was collecting together,working with the graphics  team, about carbon emission or death in Afghanistan. And I was  collecting it anyway and we just thought: what it would happen if we  just publish it? we made it available for everybody to use...and the  response has been that now the Data Blog and Data Store is a very  popular part f what the Guardian does online, and it's something that  lot of people are interested in.",
+        target: "foo2"
+    });
+      
+      
+      
+          pop.footnote({
+        start: 105,
+        end: 128,
+        text: "I think one of the most interesting thing, and it  kind of goes hand in hands with the open data movement is this idea of  direct democracy, and how people feel they have the rights to access  everything and how data can complement this movement; say you look at  the Occupy movement, it has been really interesting to see how this  movement was interested in data...you know, the 99per cent against the 1  per cent...this is a Data query right?",
+        target: "foo2"
+    });
+      
+      
+      
+            pop.footnote({
+        start: 129,
+        end:  152,
+        text: "And also the way they have managed to use Data to  show what's happening around the world, I think is all part of the same  idea: it is a DIY, 'can do' attitude...grabbing informations and using  it for yourself, using the technology in a really kind of innovative  way; it is very much part of the same movements in some way.",
+        target: "foo2"
+    });
+      
+      
+           pop.footnote({
+        start: 153,
+        end: 180,
+        text: "Most of the freedom of information quest are not from journalist, they are from campaigners or people who are interested, there is a site here called ' what do they know? ', which complies requests...to me it's really interesting that actually is not us, it's regular people who are just interested in the subject,and that levels the plain field, because you can't turn it down right? if you are a real government department you have to reply to these people. I think is bit more equal than you think, in a good way, but people don't realise it perhaps.",
+        target: "foo2"
+    });
+      
+      
+  
+
+// play video
+      //pop.play();
+      
+      
+      pop.code({
+        start: 10,
+        end: 18, 
+          onStart: function( options ) {
+            
+            
+            (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+            
+              (function(d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=429298893832590";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk')); 
+            
+      },
+        
+        onEnd: function() {
+          //     document.getElementById('fbp').innerHTML = "";
+          
+            document.getElementById('fb').style.visibility='hidden' ;
+          //      document.getElementById('fb').attr("data-href")="http://www.w3schools.com";
+       }
+     });
+      
+      
+      
+      
+      
+      
+      
+      
+       pop.code({
+        start: 22,
+        end: 55, 
+          onStart: function( options ) {
+             document.getElementById('fb').style.visibility='visible' ;
+                 
+      },
+        
+        onEnd: function() {
+                document.getElementById('fb').style.visibility='hidden' ;
+               }
+     });
+      
+      
+   
+      
+        pop.code({
+        start: 55,
+        end: 68, 
+          onStart: function( options ) {
+             document.getElementById('fb').style.visibility='visible' ;
+                 
+      },
+        
+        onEnd: function() {
+                document.getElementById('fb').style.visibility='hidden' ;
+               }
+     });
+      
+      
+      
+          pop.code({
+        start: 72,
+        end: 102, 
+          onStart: function( options ) {
+             document.getElementById('fb').style.visibility='visible' ;
+                 
+      },
+        
+        onEnd: function() {
+                document.getElementById('fb').style.visibility='hidden' ;
+               }
+     });
+       
+      
+           pop.code({
+        start: 105,
+        end: 128, 
+          onStart: function( options ) {
+             document.getElementById('fb').style.visibility='visible' ;
+                 
+      },
+        
+        onEnd: function() {
+                document.getElementById('fb').style.visibility='hidden' ;
+               }
+     });
+       
+      
+        pop.code({
+        start: 129,
+        end: 152, 
+          onStart: function( options ) {
+             document.getElementById('fb').style.visibility='visible' ;
+                 
+      },
+        
+        onEnd: function() {
+                document.getElementById('fb').style.visibility='hidden' ;
+               }
+     });
+      
+      
+        pop.code({
+        start: 153,
+        end: 180, 
+          onStart: function( options ) {
+             document.getElementById('fb').style.visibility='visible' ;
+                 
+      },
+        
+        onEnd: function() {
+                document.getElementById('fb').style.visibility='hidden' ;
+               }
+     });
+      
+      
+      
+      
+     
+ 
+     pop.webpage({
+       id: "webpages-a",
+       start: 4,
+       end: 25,
+       src: "http://www.guardian.co.uk/news/datablog ",
+       target: "webpagediv"
+     });
+
+      
+      
+         pop.webpage({
+      id: "webpages-b",
+       start: 30,
+       end: 40,
+       src: "http://www.theprisma.co.uk/wp-content/uploads/2012/01/Wikileaks-la-verdad-los-medios-PART-2-ENGLISH-4.png ",
+       target: "webpagediv"
+     });
+      
+      
+     
+      
+      
+    });
+  </script>
+  
+  
+</head>
+<body>
+  <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '429298893832590',                        // App ID from the app dashboard
+      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  /*  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk')); */
+</script>
+  <div id="parent">
+ 
+
+    <table>
+    <tr>
+        <td class="col1" valign="top"><div id="vimeo" class="left" style="float_left;width:600px;height:400px;"></div></td>
+        <td class="col2" valign="top">
+          <div id="fbp">
+            
+             <div id="foo2"></div>
+            <div id="fb" class="fb-comments" style="float: right;" data-href="http://example.com" data-width="600" data-num-posts="4"></div>
+          
+          </div>
+      
+      </td>
+    </tr>
+</table>
+    
+    
+   
+  </div>
+  <div id="foo"></div>
+<!--  <div id="hello"></div> -->
+  <div id="cont" style=""></div>
+  <div id="webpagediv"</div> 
+<script id="jsbin-javascript">
+document.getElementById("hello").innerHTML = "<strong>This URL does not have any code saved to it.</strong>";
+
+</script>
+</body>
+</html>
+  
